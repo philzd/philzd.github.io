@@ -10,15 +10,28 @@
 
   <!-- Introduction -->
   <header class="hero">
-    <img src="phil_circle.png" alt="Phil D." width="225" height="225" />
+    <img
+      src="phil_circle.png"
+      alt="Phil D."
+      width="225"
+      height="225"
+      loading="lazy"
+      decoding="async"
+    />
     <div>
       <h1>Phil D.</h1>
+
       <p>
-        ML infrastructure engineer for AI and robotics, building distributed evaluation and data pipelines for large-scale multimodal systems.
-        Currently pursuing a dual-degree MSE in Robotics and Computer &amp; Information Science at the University of Pennsylvania (expected May 2026).
+        I'm an ML infrastructure engineer building data and evaluation systems for robotics and embodied AI. I turn raw robot sensor data into clean,
+        training-ready datasets and build scalable evaluation pipelines teams can trust in production.
       </p>
+
+      <p>
+        I'm currently pursuing a dual-degree MSE in Robotics and Computer &amp; Information Science at the University of Pennsylvania, graduating in May 2026.
+      </p>
+
       <p class="muted">
-        Focus areas: robotics data infrastructure, scalable evaluation systems, safety/robustness testing, multimodal learning pipelines.
+        Focus areas: robotics data infrastructure, scalable evaluation systems, safety/robustness testing, multimodal data pipelines.
       </p>
     </div>
   </header>
@@ -28,74 +41,128 @@
     <h2>Featured Work</h2>
 
     <p class="muted">
-        Selected infrastructure and research projects focused on robotics data, scalable evaluation, and safety testing.
+      Selected infrastructure and research projects focused on robotics data, scalable evaluation, and safety testing.
     </p>
 
-    <div class="block">
+    <article class="block">
       <strong>Sentinel &mdash; Automated Red-Teaming &amp; Safety Evaluation Platform for Vision-Language Models</strong><br />
-      (<a href="https://tinyurl.com/sentinel-report" target="_blank" rel="noopener">Technical report</a>)<br />
+      (<a href="https://tinyurl.com/sentinel-report" target="_blank" rel="noopener">Technical report</a>)
+
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Ray</span>
+        <span class="tag">Evaluation</span>
+        <span class="tag">Reporting</span>
+      </div> -->
+
       <p class="muted">
         A distributed evaluation platform that stress-tests vision and vision-language models under real-world perturbations.
         Built with Ray-based parallelism, multi-signal failure detectors, and automated HTML/CSV/TXT reporting for reproducible audits.
       </p>
-    </div>
+    </article>
 
-      <div class="block">
-      <strong>Robotics Perception &amp; Data Infrastructure &mdash; xLab (Safe Autonomous Systems Lab) / University of Pennsylvania</strong><br />
+    <article class="block">
+      <strong>Robotics Perception &amp; Data Infrastructure &mdash; xLab (Safe Autonomous Systems Lab) / University of Pennsylvania</strong>
+
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Data pipelines</span>
+        <span class="tag">Dataset QA</span>
+        <span class="tag">Robustness</span>
+      </div> -->
+
       <p class="muted">
-        End-to-end pipelines for multi-camera perception and robotics deployment: data ingestion, auto-labeling, training, inference, and
-        robustness analysis. Focused on reliability in real-world settings (occlusion, lighting variation, sensor noise) and safety-oriented evaluation.
+        Built pipelines and tooling for multi-camera perception deployments: data ingestion, labeling workflows, dataset QA, and robustness evaluation
+        (occlusion, lighting variation, sensor noise) to improve reliability in real-world settings.
       </p>
-    </div>
+    </article>
 
-      <div class="block">
-      <strong>StreamFlow &mdash; Multimodal Robotics Data Engine (In Progress)</strong><br />
+    <article class="block">
+      <strong>StreamFlow &mdash; Multimodal Robotics Data Engine (In Progress)</strong>
+
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Ingestion</span>
+        <span class="tag">Alignment</span>
+        <span class="tag">Data QA</span>
+      </div> -->
+
       <p class="muted">
         A data engine that converts raw robot video and sensor logs into aligned, queryable, training-ready datasets.
-        Designed as a reusable infrastructure layer for fleet-scale embodied AI, with scalable ingestion, metadata, and quality checks.
+        Designed as a reusable infrastructure layer for fleet-scale embodied AI, with scalable ingestion, timestamp alignment, metadata indexing, and automated quality checks.
       </p>
-    </div>
+    </article>
 
-    <div class="block">
+    <article class="block">
       <strong>VidFlow &mdash; Scalable Robotics Video Compression &amp; Evaluation Pipeline</strong><br />
-      (<a href="https://tinyurl.com/vidflow-report" target="_blank" rel="noopener">Technical report</a>)<br />
+      (<a href="https://tinyurl.com/vidflow-report" target="_blank" rel="noopener">Technical report</a>)
+
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Ray</span>
+        <span class="tag">Video</span>
+        <span class="tag">Benchmarking</span>
+      </div> -->
+
       <p class="muted">
         Ray-parallel benchmarking pipeline that quantifies compression&ndash;quality tradeoffs for robotics perception video.
         Measures perceptual and semantic degradation (PSNR/SSIM/LPIPS/CLIP) to inform storage and ingestion defaults at scale.
       </p>
-    </div>
+    </article>
 
-      <div class="block">
+    <article class="block">
       <strong>Serial Load: Visual Safety Benchmark for Vision-Language Models</strong><br />
-      (<a href="https://tinyurl.com/serial-load-benchmark" target="_blank" rel="noopener">Paper</a>)<br />
+      (<a href="https://tinyurl.com/serial-load-benchmark" target="_blank" rel="noopener">Paper</a>)
+
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Benchmark</span>
+        <span class="tag">Safety eval</span>
+        <span class="tag">VLMs</span>
+      </div> -->
+
       <p class="muted">
         Controlled benchmark probing how increasing visual reasoning load affects safety judgments, highlighting uncertainty and rare false-safe failures
         missed by standard accuracy metrics.
       </p>
-    </div>
+    </article>
   </section>
 
-   <!-- Teaching -->
+  <!-- Teaching -->
   <section class="section">
     <h2>Teaching</h2>
 
-    <div class="block">
+    <article class="block">
       <strong>Head Teaching Assistant &mdash; CIS 5810 Computer Vision &amp; Computational Photography</strong><br />
       <span class="muted">University of Pennsylvania (6 semesters)</span>
-    </div>
 
-    <div class="block">
+      <div class="tags" aria-label="Teaching tags">
+        <span class="tag">Mentorship</span>
+        <span class="tag">Leadership</span>
+        <span class="tag">Computer Vision</span>
+      </div>
+    </article>
+
+    <article class="block">
       <strong>Head Teaching Assistant &mdash; ENGR 2900 Penn Global Seminar: AI &amp; Robotics</strong><br />
       <span class="muted">University of Pennsylvania (Spring 2024)</span>
-    </div>
+
+      <div class="tags" aria-label="Teaching tags">
+        <span class="tag">Robotics</span>
+        <span class="tag">Teaching</span>
+        <span class="tag">Mentorship</span>
+      </div>
+    </article>
   </section>
 
   <!-- Awards -->
   <section class="section">
     <h2>Awards</h2>
-    <div class="block">
-      <strong>TA Award for Excellence (Student-Nominated)</strong> — CIS 5810 Computer Vision &amp; Computational Photography (Summer 2022)
-    </div>
+
+    <article class="block">
+      <strong>TA Award for Excellence (Student-Nominated)</strong>
+      <span class="muted">— CIS 5810 Computer Vision &amp; Computational Photography (Summer 2022)</span>
+
+      <div class="tags" aria-label="Award tags">
+        <span class="tag">Teaching</span>
+        <span class="tag">Student-nominated</span>
+      </div>
+    </article>
   </section>
 
   <!-- Footer / Contact -->
