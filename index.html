@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Phil D.</title>
+  <title>Philippe Do</title>
   <link rel="stylesheet" href="main.css" />
 </head>
 <body class="light-theme">
@@ -12,19 +12,19 @@
   <header class="hero">
     <img
       src="phil_circle.png"
-      alt="Phil D."
+      alt="Philippe Do"
       width="225"
       height="225"
       loading="lazy"
       decoding="async"
     />
     <div>
-      <h1>Phil D.</h1>
+      <h1>Philippe Do</h1>
 
       <p>
-        I’m an ML infrastructure engineer building distributed data and evaluation
-        systems for robotics and AI — from reproducible dataset construction
-        to scalable, reliable model evaluation.
+        I’m an ML infrastructure and data engineer building distributed data and evaluation
+        systems for robotics, AI, and data-driven platforms — from reproducible
+        dataset construction to scalable, reliable model evaluation.
       </p>
 
       <p>
@@ -33,12 +33,16 @@
       </p>
 
       <p class="muted">
-        Focus areas: distributed systems, ML infrastructure, data systems and dataset quality,
+        <a href="https://github.com/philzd" target="_blank" rel="noopener">GitHub</a>
+      </p>
+
+      <p class="muted">
+        Focus areas: distributed systems, ML infrastructure, data pipelines and dataset quality,
         evaluation and monitoring, reliability and performance.
       </p>
       <p class="muted">
-        Recent work includes embodied robotics data pipelines and safety/robustness evaluation
-        for vision-language models.
+        Recent work includes data pipelines for embodied AI and robotics, and safety and robustness evaluation
+        systems for vision-language models.
       </p>
     </div>
   </header>
@@ -50,6 +54,23 @@
     <p class="muted">
       Selected ML infrastructure projects spanning distributed evaluation systems, data pipelines, and safety-focused model evaluation.
     </p>
+
+     <article class="block">
+      <strong>Multimodal Robotics Data Engine</strong><br />
+      (<a href="https://github.com/philzd/robotics_data_engine" target="_blank" rel="noopener">GitHub Repo</a>)
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Ingestion</span>
+        <span class="tag">Alignment</span>
+        <span class="tag">Data QA</span>
+      </div> -->
+
+      <p class="muted">
+        Built a deterministic data engine that transforms raw robot video and sensor logs into aligned, versioned, training-ready datasets.
+        Serves as a reusable infrastructure layer for robotics ML workflows, with scalable ingestion, cross-modal timestamp alignment,
+        invariant-based validation, and dataset health metrics.
+        Enables reproducible dataset construction and reliable downstream model training.
+      </p>
+    </article>
 
     <article class="block">
       <strong>Sentinel &mdash; Automated Red-Teaming &amp; Safety Evaluation Platform for Vision-Language Models</strong><br />
@@ -67,37 +88,7 @@
       </p>
     </article>
 
-    <article class="block">
-      <strong>Robotics Perception &amp; Data Infrastructure &mdash; xLab (Safe Autonomous Systems Lab) / University of Pennsylvania</strong>
-
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Data pipelines</span>
-        <span class="tag">Dataset QA</span>
-        <span class="tag">Robustness</span>
-      </div> -->
-
-      <p class="muted">
-        Built pipelines and tooling for multi-camera perception deployments: data ingestion, labeling workflows, dataset QA, and robustness evaluation
-        (occlusion, lighting variation, sensor noise) to improve reliability in real-world settings.
-      </p>
-    </article>
-
-    <article class="block">
-      <strong>Multimodal Robotics Data Engine</strong>
-
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Ingestion</span>
-        <span class="tag">Alignment</span>
-        <span class="tag">Data QA</span>
-      </div> -->
-
-      <p class="muted">
-        Designing and building a deterministic data engine that converts raw robot video and sensor logs into aligned, queryable, training-ready datasets.
-        Designed as a reusable infrastructure layer for robotics teams, with scalable ingestion, deterministic timestamp alignment, metadata indexing, and automated data quality checks.
-      </p>
-    </article>
-
-    <article class="block">
+      <article class="block">
       <strong>Kubernetes-Deployed ML Inference Service (FastAPI + Ray)</strong>
 
       <!-- <div class="tags" aria-label="Project tags">
@@ -110,6 +101,21 @@
         Production-style ML inference service combining FastAPI and Ray, deployed on Kubernetes. Designed for concurrent request handling with batching
         and explicit backpressure, resource limits, readiness and liveness probes, and horizontal autoscaling. Instrumented with Prometheus-compatible
         metrics to monitor latency, throughput, and system health under bursty load.
+      </p>
+    </article>
+
+    <article class="block">
+      <strong>Robotics Perception &amp; Data Infrastructure &mdash; xLab (Safe Autonomous Systems Lab) / University of Pennsylvania</strong>
+
+      <!-- <div class="tags" aria-label="Project tags">
+        <span class="tag">Data pipelines</span>
+        <span class="tag">Dataset QA</span>
+        <span class="tag">Robustness</span>
+      </div> -->
+
+      <p class="muted">
+        Built pipelines and tooling for multi-camera perception deployments: data ingestion, labeling workflows, dataset QA, and robustness evaluation
+        (occlusion, lighting variation, sensor noise) to improve reliability in real-world settings.
       </p>
     </article>
 
