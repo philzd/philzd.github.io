@@ -21,23 +21,23 @@
     <div>
       <h1>Philippe Do</h1>
 
-      <p>
-        I am a data infrastructure engineer building systems that turn raw multimodal data into reliable,
-        high-value inputs for machine learning.
-      </p>
-
-      <p class="muted">
-        Focused on dataset construction, data validation, and scenario-level evaluation for real-world ML systems.
-      </p>
-
-      <p>
-        Currently building a scenario evaluation and data value scoring system to prioritize high-impact
-        training data for autonomous driving.
-      </p>
-
       <p class="muted">
         <a href="https://github.com/philzd" target="_blank" rel="noopener">GitHub</a>
       </p>
+
+      <p>
+        I build data and evaluation infrastructure for AI and robotics &mdash; turning
+        raw multimodal data into reliable training inputs and rigorous model evaluations
+        for autonomous systems.
+      </p>
+
+      <p>
+        Currently building systems to identify failure modes and prioritize high-value training
+        data for autonomous driving, including a scenario evaluation and data value scoring platform
+        and dataset inspection and labeling tools.
+      </p>
+
+     
 
     </div>
   </header>
@@ -47,51 +47,41 @@
     <h2>Featured Work</h2>
 
     <p class="muted">
-      Selected data and ML infrastructure projects, including distributed systems, data pipelines,
-      and analytics and evaluation systems.
+      Selected projects spanning data infrastructure, evaluation systems, and distributed data and ML pipelines.
     </p>
 
-     <article class="block">
-      <strong>Multimodal Robotics Data Engine</strong><br />
-      (<a href="https://github.com/philzd/robotics-data-engine" target="_blank" rel="noopener">GitHub Repo</a>)
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Ingestion</span>
-        <span class="tag">Alignment</span>
-        <span class="tag">Data QA</span>
-      </div> -->
-
+    <article class="block">
+      <strong>Scenario Evaluation & Data Value Platform (Autonomous Driving)</strong><br />
+ 
       <p class="muted">
-        Designed and built a deterministic multimodal data engine that transforms raw robot video and sensor logs into aligned, versioned, training-ready datasets.
-        Serves as a reusable data infrastructure layer for robotics ML workflows, with scalable ingestion, cross-modal timestamp alignment, validation, and
-        dataset health metrics. Includes a structured Parquet dataset layer with inspection and labeling workflows, enabling reproducible dataset construction
-        and human-in-the-loop curation.
+        Building a scenario evaluation and data value scoring system to prioritize high-impact training data and
+        surface failure modes in autonomous driving systems.
       </p>
     </article>
 
     <article class="block">
-      <strong>Sentinel &mdash; Automated Red-Teaming &amp; Safety Evaluation Platform for Vision-Language Models</strong><br />
+      <strong>Sentinel &mdash; Safety Evaluation Platform for Vision-Language Models</strong><br />
       (<a href="https://tinyurl.com/sentinel-report" target="_blank" rel="noopener">Technical report</a>)
 
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Ray</span>
-        <span class="tag">Evaluation</span>
-        <span class="tag">Reporting</span>
-      </div> -->
+      <p class="muted">
+        Built a distributed evaluation platform for vision-language models, enabling scalable robustness testing under structured perturbations and
+        surfacing failure modes in safety-critical scenarios with Ray-based parallel execution.
+      </p>
+    </article>
+
+    <article class="block">
+      <strong>Multimodal Robotics Data Engine</strong><br />
+      (<a href="https://github.com/philzd/robotics-data-engine" target="_blank" rel="noopener">GitHub Repo</a>)
 
       <p class="muted">
-        Built a distributed evaluation platform for vision-language models, enabling scalable robustness testing under structured perturbations with
-        Ray-based parallel execution and reproducible evaluation outputs.
+        Designed and built a deterministic multimodal data engine that transforms raw robot video and sensor logs into aligned, versioned, training-ready datasets. 
+        Provides scalable ingestion, cross-modal timestamp alignment, validation, and dataset health metrics, with a structured Parquet dataset layer. Includes
+        inspection and labeling workflows enabling reproducible dataset construction and human-in-the-loop curation for downstream evaluation and training.
       </p>
     </article>
 
     <article class="block">
       <strong>Kubernetes-Deployed ML Inference Service (FastAPI + Ray)</strong>
-
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Kubernetes</span>
-        <span class="tag">Ray</span>
-        <span class="tag">ML Infra</span>
-      </div> -->
 
       <p class="muted">
         Designed and built a production-style ML inference service combining FastAPI and Ray, deployed on Kubernetes.
@@ -104,27 +94,15 @@
     <article class="block">
       <strong>Robotics Perception &amp; Data Infrastructure &mdash; xLab (Safe Autonomous Systems Lab) / University of Pennsylvania</strong>
 
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Data pipelines</span>
-        <span class="tag">Dataset QA</span>
-        <span class="tag">Robustness</span>
-      </div> -->
-
       <p class="muted">
-        Built pipelines and tooling for multi-camera perception systems for autonomous forklifts, including data ingestion, labeling workflows,
-        dataset QA, and robustness evaluation (occlusion, lighting variation, sensor noise) in collaboration with a global logistics partner.
+        Built pipelines and tooling for multi-camera perception systems for autonomous forklifts, including large-scale dataset construction,
+        labeling workflows, and robustness evaluation (occlusion, lighting variation, sensor noise) in collaboration with a global logistics partner.
       </p>
     </article>
 
     <article class="block">
       <strong>VidFlow &mdash; Scalable Robotics Video Compression &amp; Evaluation Pipeline</strong><br />
       (<a href="https://tinyurl.com/vidflow-report" target="_blank" rel="noopener">Technical report</a>)
-
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Ray</span>
-        <span class="tag">Video</span>
-        <span class="tag">Benchmarking</span>
-      </div> -->
 
       <p class="muted">
         Developed a Ray-parallel benchmarking pipeline that quantifies compression&ndash;quality tradeoffs for robotics perception video.
@@ -158,12 +136,6 @@
     <article class="block">
       <strong>Serial Load: Visual Safety Benchmark for Vision-Language Models</strong><br />
       (<a href="https://tinyurl.com/serial-load-benchmark" target="_blank" rel="noopener">Paper</a>)
-
-      <!-- <div class="tags" aria-label="Project tags">
-        <span class="tag">Benchmark</span>
-        <span class="tag">Safety eval</span>
-        <span class="tag">VLMs</span>
-      </div> -->
 
       <p class="muted">
         Developed a controlled benchmark probing how increasing visual reasoning load affects safety judgments, highlighting uncertainty and rare false-safe failures
